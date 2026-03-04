@@ -27,3 +27,20 @@ public:
         return prev; 
     }
 };
+// with recursion 
+// public:
+//     void reverse(ListNode* cur, ListNode* prev , ListNode*& head){
+//         if(cur == NULL){
+//             head = prev;
+//             return ;
+//         }
+//         ListNode* forward = cur -> next;
+//         reverse(forward , cur , head );
+//         cur ->next  = prev;
+//     }
+//     ListNode* reverseList(ListNode* head) {
+//         ListNode* cur = head;
+//         ListNode* prev = NULL;
+
+//         reverse(cur, prev , head);
+//         return head; 

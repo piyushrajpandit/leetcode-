@@ -27,6 +27,23 @@ public:
         return prev; 
     }
 };
+//2n recurssion 
+// ListNode* reverse1(ListNode*& head){
+//     if(head == NULL || head -> next == NULL){
+//         return head ;
+//     }
+//     ListNode* chotahead = reverse1(head->next);
+
+//     head-> next-> next = head;
+//     head -> next = NULL;
+//     return chotahead;
+
+
+// }
+
+
+
+
 // with recursion 
 // public:
 //     void reverse(ListNode* cur, ListNode* prev , ListNode*& head){

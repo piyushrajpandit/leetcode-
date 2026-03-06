@@ -1,0 +1,19 @@
+#apprach 
+1. we are using recurssion 
+2. we try to reverse first k node and the use recursion 
+3. for that
+next = curr->next
+curr->next ko prev se point karwa dege 
+
+bas abb curr = next;
+        prev = curr
+ we do this till k time and curr!= null
+
+4. problem here is some time we have only 2 nodes and k = 3 so we dont have reverse it for that 
+we check if count of nodes < k 
+for that tranverse list till curr!= null and count < k ( iss loop me inter karne ke baad count++ hoga to count ==k hona chiye )
+at last  if count < k   return kardo  head 
+
+5. we have to call recursion for next part to head->next  == recursive call;
+
+6. return prevous karna hoga kuy ki head to prevoius hi hoga

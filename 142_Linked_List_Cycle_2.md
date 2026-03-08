@@ -27,3 +27,7 @@ one by one slow = slow next
 
 
 summary is simple so from intersection you move A steps then you reach starting of the loop.
+
+add this for protection
+
+ListNode* intersection = flyodintersection(head);

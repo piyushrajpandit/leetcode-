@@ -5,3 +5,4 @@
 5. now merge list for merging use if because may one link list can be empty
 6. setup head 
 7. delete the dummy heads
+8. time complexity o(n) +o(1) +o(1)  = 0(n)

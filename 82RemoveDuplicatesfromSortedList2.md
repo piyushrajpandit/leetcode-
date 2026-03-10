@@ -18,3 +18,6 @@ delete (temp);
 
 4. else increse curr  = curr_>next
    prev = curr
+
+
+problem i face is every time you increse iteration like if or while you have to check if curr != NULL and some times in if(curr_>next!=NULL)

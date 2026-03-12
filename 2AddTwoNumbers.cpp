@@ -25,6 +25,41 @@ void  insertattail(ListNode *& anshead, ListNode *& anstail, int val){
 
 }
 
+// add better code optimized 
+// struct ListNode * add(ListNode * first,ListNode * second){
+//     //step 1 carry 0 
+//     int carry = 0 ;
+   
+//    ListNode * anshead = NULL;
+//    ListNode * anstail = NULL; 
+//     //step 2 find sum 
+//     while(first != NULL || second != NULL || carry != 0  ){
+//         int val1 = 0;
+//         if(first != NULL){
+//             val1 = first -> val;
+//         }
+//         int val2 = 0 ;
+//         if(second != NULL){
+//             val2 = second -> val;
+//         }
+//         int sum = carry + val1 + val2 ; 
+   
+//          int digit = sum % 10;
+         
+//          insertattail(anshead, anstail, digit);
+
+//     //carry /10
+//          carry = sum /10;
+//          if(first != NULL)
+//          first = first ->next;
+//          if(second != NULL)
+//          second = second -> next;
+//     }
+   
+   
+//     return anshead;
+// }
+
 struct ListNode * add(ListNode * first,ListNode * second){
     //step 1 carry 0 
     int carry = 0 ;

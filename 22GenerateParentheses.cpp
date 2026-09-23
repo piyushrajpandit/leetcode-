@@ -1,0 +1,28 @@
+/*RECURSION:
+Go deeper → Go deeper → Go deeper
+
+RETURN:
+Come back → Try next choice → Come back → Try next choice */
+
+class Solution {
+public:
+    void solve(int n , int open , int close, string  curr, vector<string> & ans){
+        if(open == n && close == n){
+            ans.push_back(curr);
+            return;
+        }
+        if(open < n){
+            solve( n , open + 1, close, curr +'(', ans);
+        }
+        if(close < open){
+            solve(n , open , close+ 1, curr + ')', ans);
+        }
+    }
+    vector<string> generateParenthesis(int n) {
+        vector<string> ans;
+
+       solve(n , 0 , 0, "", ans);
+       return ans;
+        
+    }
+};

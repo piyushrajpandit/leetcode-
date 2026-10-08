@@ -1,3 +1,6 @@
+//*second time done this question only simple thing put the first braces in stack 
+//and if the second braces comes if stack is not wmpty mark the index of it and after removing one if 
+//    stack became empty make both s[i] and s[older index ] =* and return answer by removing * from ansawer*//
 class Solution {
 public:
     string removeOuterParentheses(string s) {
